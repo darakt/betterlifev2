@@ -1,9 +1,7 @@
 from django.db import models
-from django.core.validators import RegexValidator
-from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 
-attributeWhiteListed = [ # we don't want to pass everything to the front so no need to jsonified everything
+attributeWhiteListed = [
     'id',
     'username',
     'first_name',
